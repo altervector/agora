@@ -1,17 +1,30 @@
+/* ============================================================
+   CONFIG.JS - AGORA  (pàgina principal)
+   ============================================================ */
+
 const CONFIG = {
 
     // 1. NEGOCI
+    COOK:           "cookies_agora",
     NOM:            "àgora",
     LOGO:           "logo/logoAGtrans.png",
     LOGO_T:         "",
     SLOGAN:         "Plaça Vella",
-    TELEFON:        "93 788 72 91",
+    TELEFON:        "93 788 72 91",        TELEFON_LABEL:   "Teléfono",      TELEFON_ICO: "📞",
     MOBIL:          "625 52 52 79",
+    WHATSAPP:       "https://wa.me/34", WHATSAPPLABEL:"💬 Escríbenos por WhatsApp",
     EMAIL:          "agora@alterwebstudio.com", /*agora26vella@gmail.com */
     ADRECA:         "Carrer de Jaume Cantarer, 4, 08221 Terrassa, Barcelona",
+      ADRECA_LABEL: "Dirección",
+      ADRECA_ICO: "📍",
+    HORA_0:          "Horaris",
+    HORA_1:          "Dilluns a dijous: 08:00 – 23:00h",
+    HORA_2:          "Divendres i dissabte: 08:00 – 24:00h",
+    HORA_3:          "Diumenge: 09:00 - 23:00h",
     INSTAGRAM:      "https://www.instagram.com/agoraplazavella",
     FACEBOOK:       "https://www.facebook.com/profile.php?id=100054618451503",
     EMAIL_SUPORT:   "info@alterwebstudio.com",
+    //-------------------------------------------------------------------------------------------------------------------------
 
 
     // 2. RUTES (en local, tot és relatiu)
@@ -51,10 +64,7 @@ const CONFIG = {
     QUI_SOM:         "Qui som...",
     QUI_DESC:        "El nostre local està dedicat als serveis de restauració. Oferim cuina mediterrània i espanyola, incloent esmorzars, dinars, sopars i tapes, amb opcions per menjar al local, a la terrassa o per emportar. Us brindem un menjar de qualitat, ambient acollidor i servei amable.",
 
-    HORA_0:          "Horaris",
-    HORA_1:          "Dilluns a dijous: 08:00 – 23:00h",
-    HORA_2:          "Divendres i dissabte: 08:00 – 24:00h",
-    HORA_3:          "Diumenge: 09:00 - 23:00h",
+
 
     RESERVES:        "Fes la teva Reserva",
 
