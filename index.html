@@ -1,118 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="ca">
-    
+
 <head>
+    <!-- ═══ 1. BÀSIC ═══════════════════════════════════════════════ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Àgora Restaurant | Carta Digital</title>
     <meta name="description" content="Consulta la carta i els plats de l'Àgora Restaurant de forma digital i actualitzada.">
+    <meta name="author" content="Àgora Restaurant">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://agora.alterwebstudio.com/">
+    <!-- <link rel="alternate" hreflang="ca" href="https://agora.alterwebstudio.com/"> -->
 
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.agora.alterwebstudio.com/">
-
+    <!-- ═══ 2. ICONES I PWA ════════════════════════════════════════ -->
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="https://avsets.pages.dev/logo/logoAG.png">
     <link rel="apple-touch-icon" href="https://avsets.pages.dev/logo/logoAG.png">
+    <meta name="theme-color" content="#2c3e35">
 
-    <!-- NUEVO: Apple (iPhone/iPad) -->
+    <!-- ═══ 3. APPLE (iPhone/iPad) ═════════════════════════════════ -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Àgora Restaurant">
     <meta name="format-detection" content="telephone=yes">
-    <meta name="theme-color" content="#2c3e35">
 
-    <!-- NUEVO: carga más rápida del CDN de imágenes -->
+    <!-- ═══ 4. RENDIMENT (CDN d'imatges) ═══════════════════════════ -->
     <link rel="preconnect" href="https://avsets.pages.dev" crossorigin>
     <link rel="dns-prefetch" href="https://avsets.pages.dev">
 
-    <!-- NUEVO: geo para buscadores locales -->
+    <!-- ═══ 5. SEO LOCAL ═══════════════════════════════════════════ -->
     <meta name="geo.region" content="ES-CT">
     <meta name="geo.placename" content="Terrassa">
+    <!-- <meta name="geo.position" content="LAT;LON"> -->
+    <!-- <meta name="ICBM" content="LAT, LON"> -->
 
-    <meta name="google-site-verification" content="eFhuaZXDnRr9eoP55YQ2C4Z3Fi76nWksNZJ5A0DwzhM" />
+    <!-- ═══ 6. VERIFICACIÓ ═════════════════════════════════════════ -->
+    <meta name="google-site-verification" content="eFhuaZXDnRr9eoP55YQ2C4Z3Fi76nWksNZJ5A0DwzhM">
 
+    <!-- ═══ 7. OPEN GRAPH (WhatsApp, Facebook...) ══════════════════ -->
     <meta property="og:title" content="Àgora Restaurant | Carta Digital">
     <meta property="og:description" content="Consulta la nostra carta actualitzada directament des del mòbil.">
     <meta property="og:image" content="https://avsets.pages.dev/logo/logoAG.png">
-    <!-- NUEVO: tamaño de la imagen al compartir (WhatsApp lo necesita) -->
     <meta property="og:image:width" content="812">
     <meta property="og:image:height" content="540">
     <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Logo de l'Àgora Restaurant">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="www.agora.alterwebstudio.com/">
-    <meta property="og:locale" content="es_ES">
-    <!-- NUEVO -->
+    <meta property="og:url" content="https://agora.alterwebstudio.com/">
+    <meta property="og:locale" content="ca_ES">
     <meta property="og:site_name" content="Àgora Restaurant">
 
+    <!-- ═══ 8. TWITTER / X ═════════════════════════════════════════ -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Àgora Restaurant | Carta Digital">
     <meta name="twitter:description" content="Consulta la nostra carta actualitzada directament des del mòbil.">
-    <meta name="twitter:image" content="https://avsets.pages.dev/logo/logo-AG.png">
-    
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": ["Restaurant", "FoodEstablishment", "LocalBusiness"],
-      "@id": "https://agora.alterwebstudio.com/#business",
-      "name": "Àgora - Plaça Vella",
-      "image": "https://avsets.pages.dev/images/agora/hero-agora.png",
-      "logo": "https://avsets.pages.dev/logo/logoAGtrans.png",
-      "telephone": "+34937887291",
-      "email": "agora@alterwebstudio.com",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Carrer de Jaume Cantarer, 4",
-        "addressLocality": "Terrassa",
-        "addressRegion": "Barcelona",
-        "postalCode": "08221",
-        "addressCountry": "ES"
-      },
-      "url": "https://agora.alterwebstudio.com",
-      "openingHours": ["Mo-Th 08:00-23:00", "Fr-Sa 08:00-00:00", "Su 09:00-23:00" ],
-      "servesCuisine": ["Mediterrània", "Espanyola", "Tapes"],
-      "areaServed": ["Terrassa"],
-      "sameAs": [
-        "https://www.instagram.com/agoraplazavella",
-        "https://www.facebook.com/profile.php?id=100054618451503",
-        "https://search.google.com/local/writereview?placeid=ChIJGU4gT-qSpBIRLvqRcvS-P7E&source=g.page.m.ia._&laa=nmx-review-solicitation-ia2"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "name": "Àgora - Plaça Vella",
-      "url": "https://agora.alterwebstudio.com/",
-      "inLanguage": "ca",
-      "publisher": { "@id": "https://agora.alterwebstudio.com/#business" }
-    }
-  ]
-}
-</script>
-    
-    
-    
-    
-    
-    
-    
+    <meta name="twitter:image" content="https://avsets.pages.dev/logo/logoAG.png">
+    <meta name="twitter:image:alt" content="Logo de l'Àgora Restaurant">
 
+    <!-- ═══ 9. DADES ESTRUCTURADES (JSON-LD) ═══════════════════════ -->
+    <!-- Pendent: geo, hasMap, hasMenu (URL de la carta), aggregateRating -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Restaurant", "FoodEstablishment", "LocalBusiness"],
+          "@id": "https://agora.alterwebstudio.com/#business",
+          "name": "Àgora - Plaça Vella",
+          "image": "https://avsets.pages.dev/images/agora/hero-agora.png",
+          "logo": "https://avsets.pages.dev/logo/logoAGtrans.png",
+          "telephone": "+34937887291",
+          "email": "agora@alterwebstudio.com",
+          "priceRange": "€€",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Carrer de Jaume Cantarer, 4",
+            "addressLocality": "Terrassa",
+            "addressRegion": "Barcelona",
+            "postalCode": "08221",
+            "addressCountry": "ES"
+          },
+          "url": "https://agora.alterwebstudio.com",
+          "openingHours": ["Mo-Th 08:00-23:00", "Fr-Sa 08:00-00:00", "Su 09:00-23:00"],
+          "servesCuisine": ["Mediterrània", "Espanyola", "Tapes"],
+          "areaServed": ["Terrassa"],
+          "sameAs": [
+            "https://www.instagram.com/agoraplazavella",
+            "https://www.facebook.com/profile.php?id=100054618451503",
+            "https://search.google.com/local/writereview?placeid=ChIJGU4gT-qSpBIRLvqRcvS-P7E&source=g.page.m.ia._&laa=nmx-review-solicitation-ia2"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Àgora - Plaça Vella",
+          "url": "https://agora.alterwebstudio.com/",
+          "inLanguage": "ca",
+          "publisher": { "@id": "https://agora.alterwebstudio.com/#business" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══ 10. VEL + SCRIPTS ══════════════════════════════════════ -->
     <style>
-       /* body { opacity: 0; transition: opacity 0.5s ease-in; }*/
-       body { opacity: 1; }
+        body { opacity: 0; transition: opacity 0.5s ease-in; }
     </style>
 
-    <script src="config.js"></script>
-    <!--<span>ERROR DEL SISTEMA: Contacta amb </span>
-    <a href="mailto:info@alterwebstudio.com">info@alterwebstudio.com</a>
-    <span> per obtenir més detalls.</span>-->
     <script>
         window.MODULS = ["api.js", "menulogic.js", "main.js"];
     </script>
     <script src="loader.js"></script>
 </head>
+
+
 <body>
 
     <div id="navbar"></div>
