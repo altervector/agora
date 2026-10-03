@@ -62,7 +62,7 @@ BLOC4_TITOL:     "",
 BLOC4_DESC:      "",
 
 QUI_SOM:         "Qui som...",
-QUI_DESC:        "El nostre local està dedicat als serveis de restauració. Oferim cuina mediterrània i espanyola, incloent esmorzars, dinars, sopars i tapes, amb opcions per menjar al local, a la terrassa o per emportar. Us brindem un menjar de qualitat, ambient acollidor i servei amable.",
+QUI_SOM_DESC:        "El nostre local està dedicat als serveis de restauració. Oferim cuina mediterrània i espanyola, incloent esmorzars, dinars, sopars i tapes, amb opcions per menjar al local, a la terrassa o per emportar. Us brindem un menjar de qualitat, ambient acollidor i servei amable.",
 
 
 
