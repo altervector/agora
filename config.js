@@ -1,32 +1,34 @@
 /* ============================================================
-CONFIG.JS - AGORA  (pàgina principal)
-============================================================ */
+   CONFIG.JS — Àgora
+   Esquelet comú (mateix ordre a totes les webs):
+   1 Negoci · 2 Rutes · 3 Imatges · 4 Navbar · 5 Hero · 6 Qui som
+   7 Contingut del projecte · 8 On som · 9 Seguretat · 10 Altres
+   ============================================================ */
 
 const CONFIG = {
 
-// 1. NEGOCI
+// ═══ 1. NEGOCI ═══════════════════════════════════════════════════════════
 COOK:           "cookies_agora",
 NOM:            "àgora",
 LOGO:           "logo/logoAGtrans.png",
 LOGO_T:         "",
 SLOGAN:         "Plaça Vella",
-TELEFON:        "93 788 72 91",        TELEFON_LABEL:   "Teléfono",      TELEFON_ICO: "📞",
+TELEFON:        "93 788 72 91",     TELEFON_LABEL:  "Teléfono",    TELEFON_ICO: "📞",
 MOBIL:          "625 52 52 79",
-WHATSAPP:       "https://wa.me/34", WHATSAPPLABEL:"💬 Escríbenos por WhatsApp",
-EMAIL:          "agora@alterwebstudio.com", /*agora26vella@gmail.com */
+WHATSAPP:       "https://wa.me/34", WHATSAPPLABEL:  "💬 Escríbenos por WhatsApp",
+EMAIL:          "agora@alterwebstudio.com",   EMAIL_LABEL: "",   EMAIL_ICO: "",   // alternativa: agora26vella@gmail.com
 ADRECA:         "Carrer de Jaume Cantarer, 4, 08221 Terrassa, Barcelona",
 ADRECA_LABEL:   "Dirección",
 ADRECA_ICO:     "📍",
-HORA_0:         "Horaris",
+HORA_0:         "Horaris",   HR: "",
 HORA_1:         "Dilluns a dijous: 08:00 – 23:00h",
 HORA_2:         "Divendres i dissabte: 08:00 – 24:00h",
 HORA_3:         "Diumenge: 09:00 - 23:00h",
 INSTAGRAM:      "https://www.instagram.com/agoraplazavella",
 FACEBOOK:       "https://www.facebook.com/profile.php?id=100054618451503",
 EMAIL_SUPORT:   "info@alterwebstudio.com",
-//-------------------------------------------------------------------------------------------------------------------------
 
-// 2. RUTES (en local, tot és relatiu)
+// ═══ 2. RUTES ════════════════════════════════════════════════════════════
 REPO_URL:       "https://altervector.github.io/agora/",
 BASE_URL:       "./",
 BASE_WORKER:    "https://agora.altervector.workers.dev",
@@ -35,49 +37,65 @@ ASSETS:         "https://avsets.pages.dev/",
 URL_MAPS:       "https://www.google.com/maps/search/?api=1&query=Agora+Plaza+Vella",
 URL_RESSENYES:  "https://search.google.com/local/writereview?placeid=ChIJGU4gT-qSpBIRLvqRcvS-P7E&source=g.page.m.ia._&laa=nmx-review-solicitation-ia2",
 
-// 3. IMATGES
-BACKGROUND:      "", // ← canviar en el css .html{}
-BLOC_HERO:       "images/agora/hero-agora.png",
-BLOC1:           "images/agora/diari.png",
-BLOC2:           "images/agora/finde.png",
-BLOC3:           "images/agora/grups.png",
-BLOC4:           "",
-QR:              "qr/qr-agoraplazavella.png",
-//-------------------------------------------------------------------------------------------------------------------------
+// ═══ 3. IMATGES ══════════════════════════════════════════════════════════
+BACKGROUND:     "",   // ← es canvia al CSS (html{})
+BLOC_HERO:      "images/agora/hero-agora.png",
+QR:             "qr/qr-agoraplazavella.png",
 
-// 2.3 RUTES Textos
-HERO_BOTO:       "Descobreix-nos",
-SECCIO_TITOL:    "Els nostres Menús",
+// ═══ 4. NAVBAR ═══════════════════════════════════════════════════════════
+// (pendent: aquí anirà la llista NAV de la hamburguesa)
 
-BLOC1_TITOL:     "Menú Diari",
-BLOC1_DESC:      "De dilluns a divendres al migdia. Primer, segon, postre i beguda.",
+// ═══ 5. HERO ═════════════════════════════════════════════════════════════
+HERO_EYEBROW:   "",
+HERO_TITOL:     "",
+HERO_BOTO_PRI:  "",
+HERO_BOTO_SEC:  "",
+HERO_BOTO:      "Descobreix-nos",
 
-BLOC2_TITOL:     "Menú Cap de Setmana",
-BLOC2_DESC:      "Dissabte i diumenge. Una selecció especial per gaudir en família.",
+// ═══ 6. QUI SOM ══════════════════════════════════════════════════════════
+QUI_SOM:        "Qui som...",
+QUI_SOM_TIT:    "",
+QUI_SOM_DESC:   "El nostre local està dedicat als serveis de restauració. Oferim cuina mediterrània i espanyola, incloent esmorzars, dinars, sopars i tapes, amb opcions per menjar al local, a la terrassa o per emportar. Us brindem un menjar de qualitat, ambient acollidor i servei amable.",
 
-BLOC3_TITOL:     "Menú Grups",
-BLOC3_DESC:      "Per a celebracions i esdeveniments. Per a un mínim de 10 persones i amb reserva concertada.",
+// ═══ 7. CONTINGUT DEL PROJECTE (diferent a cada web) ═════════════════════
 
-BLOC4_TITOL:     "",
-BLOC4_DESC:      "",
+// ── 7.1 Blocs de menús ──
+SECCIO_TITOL:   "Els nostres Menús",
 
-QUI_SOM:         "Qui som...",
-QUI_SOM_DESC:        "El nostre local està dedicat als serveis de restauració. Oferim cuina mediterrània i espanyola, incloent esmorzars, dinars, sopars i tapes, amb opcions per menjar al local, a la terrassa o per emportar. Us brindem un menjar de qualitat, ambient acollidor i servei amable.",
+BLOC1:          "images/agora/diari.png",
+BLOC1_TITOL:    "Menú Diari",
+BLOC1_DESC:     "De dilluns a divendres al migdia. Primer, segon, postre i beguda.",
 
+BLOC2:          "images/agora/finde.png",
+BLOC2_TITOL:    "Menú Cap de Setmana",
+BLOC2_DESC:     "Dissabte i diumenge. Una selecció especial per gaudir en família.",
 
+BLOC3:          "images/agora/grups.png",
+BLOC3_TITOL:    "Menú Grups",
+BLOC3_DESC:     "Per a celebracions i esdeveniments. Per a un mínim de 10 persones i amb reserva concertada.",
 
-RESERVES:        "Fes la teva Reserva",
+BLOC4:          "",
+BLOC4_TITOL:    "",
+BLOC4_DESC:     "",
 
+// ── 7.2 Reserves ──
+RESERVES:       "Fes la teva Reserva",
 
-// 3. SEGURETAT (de moment buit, s'activa quan pujem a producció)
-SITIOS_SEGUROS:  ["alterwebstudio.com", "altervector.com", "pages.dev", "altervector.github.io", "localhost", "127.0.0.1"],
+// ═══ 8. ON SOM ═══════════════════════════════════════════════════════════
+ON_SOM:         "",
+ON_SOM_TIT:     "",
 
+// ═══ 9. SEGURETAT ════════════════════════════════════════════════════════
+//SITIOS_SEGUROS: ["alterwebstudio.com", "altervector.com", "pages.dev", "altervector.github.io", "localhost", "127.0.0.1"],
+SITIOS_SEGUROS: ["alterwebstudio.com", "altervector.com", "pages.dev", "altervector.github.io"],
 
-// 4. COLORS (per si cal canviar-los des de JS)
+// ═══ 10. ALTRES ══════════════════════════════════════════════════════════
+
+// ── 10.1 Colors (per si cal canviar-los des de JS) ──
 COLOR_PRINCIPAL: "#2c3e35",
 COLOR_ACCENT:    "#c8973a",
 
-    // 2. COLORS DE L'ADMINISTRADOR (Optimitzats per a fons fosc/negre)
+// ── 10.2 Colors de l'administrador (optimitzats per a fons fosc) ──
 COLORS_SECCIONS: {
     "Entrants":       "#00fe83", // Verd neó clar
     "Primer":         "#00aeff", // Blau cel elèctric
